@@ -76,7 +76,7 @@ var c = __webpack_require__(1);
 
 // – устанавливает атрибут
 
-//document.head.link.setAttribute(href, c);
+document.head.link.setAttribute(href, c);
 
 /***/ }),
 /* 1 */
@@ -118,7 +118,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, ".flex-container {\n    flex-flow: row wrap;\n    justify-content: flex-start;\n    align-items: flex-start;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -moz-flex;\n    display: -webkit-flex;\n    display: flex; }\n\n.wrapper > * {\n    padding: 10px;\n    flex: 1 100%; }\n\n@media all and (min-width: 600px) {\n    .sidebar {\n        flex: 1 0 auto; } }\n@media all and (min-width: 800px) {\n    body {\n        flex-direction: column;\n        align-items: flex-start; } }\n.flex-item, .sidebar, .article, .aside {\n    background: tomato;\n    padding: 5px;\n    width: 100px;\n    height: 100px;\n    margin: 10px;\n    line-height: 100px;\n    color: white;\n    font-weight: bold;\n    font-size: 2em;\n    text-align: center; }\n\n.sidebar {\n    width: 400px;\n    background: #ff4444;\n    flex: 1 0 auto; }\n\n.article {\n    background: #41fc44;\n    flex: 4 0 auto; }\n\n.aside {\n    width: 300px;\n    background: #3a65ff;\n    flex: 1 3 auto; }\n", ""]);
+exports.push([module.i, ".flex-container {\n    flex-flow: row wrap;\n    justify-content: flex-start;\n    align-items: flex-start;\n    display: -webkit-box;\n    display: -moz-box;\n    display: -ms-flexbox;\n    display: -moz-flex;\n    display: -webkit-flex;\n    display: flex; }\n\n.wrapper > * {\n    padding: 10px;\n    flex: 1 100%; }\n\n@media all and (min-width: 600px) {\n    .sidebar {\n        flex: 1 0 auto; } }\n@media all and (min-width: 800px) {\n    body {\n        flex-direction: column;\n        align-items: flex-start; } }\n.flex-item, .sidebar, .article, .aside {\n\n    background: tomato;\n    padding: 5px;\n    width: 100px;\n    height: 100px;\n    margin: 10px;\n    line-height: 100px;\n    color: white;\n    font-weight: bold;\n    font-size: 2em;\n    text-align: center; }\n\n.sidebar {\n    width: 400px;\n    background: #ff4444;\n    flex: 1 0 auto; }\n\n.article {\n    background: #41fc44;\n    flex: 4 0 auto; }\n\n.aside {\n    width: 300px;\n    background: #3a65ff;\n    flex: 1 3 auto; }\n", ""]);
 
 // exports
 
