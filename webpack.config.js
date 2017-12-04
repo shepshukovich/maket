@@ -1,34 +1,16 @@
 'use strict';
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-    entry: ["./home.js", 'input.scss'],
+    entry: "./src/index.js",
     output: {
-        filename: "./sborka/build.js"
+        filename: "./bundle.js",
+        path: path.resolve(__dirname, 'dist')
 
     },
     module: {
-
-        rules: [
-            /*
-            your other rules for JavaScript transpiling go in here
-            */
-            { // regular css files
-                test: /\.css$/,
-                loader: ExtractTextPlugin.extract({
-                    loader: 'css-loader?importLoaders=1',
-                }),
-            },
-            { // sass / scss loader for webpack
-                test: /\.(sass|scss)$/,
-                loader: ExtractTextPlugin.extract(['css-loader', 'scss-loader'])
-            }
+        loaders: [
+            { test: /\.css$/, loader: "style-loader!css-loader" }
         ]
-    },
-    plugins: [
-        new ExtractTextPlugin({ // define where to save the file
-            filename: 'sborka/build.nashCSS.css',
-            allChunks: true,
-        }),
-    ],
+    }
 };
