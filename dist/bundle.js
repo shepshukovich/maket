@@ -71,12 +71,14 @@
 
 
 
-var c = __webpack_require__(1);
+var css = __webpack_require__(1);
+
+var newLink = document.createElement('link');
+newLink.setAttribute('href', css);
+newLink.setAttribute('rel', 'stylesheet');
+document.head.appendChild(newLink);
 
 
-// – устанавливает атрибут
-
-document.head.link.setAttribute(href, c);
 
 /***/ }),
 /* 1 */
