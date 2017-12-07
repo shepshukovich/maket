@@ -1,0 +1,26 @@
+{
+  "name": "maket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "chunk": "^0.0.2",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5",
+    "webpack-livereload-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
