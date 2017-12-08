@@ -9,6 +9,7 @@ let createLinkTagInDOM = () => {
     document.head.appendChild(newLink);
 };
 
+
 createLinkTagInDOM();
 
 //<link href="output.css" rel="stylesheet">
