@@ -45,15 +45,16 @@
 .sidebar {
   @extend .flex-item;
   width: 400px;
-  background: #ff4444;
+  background: red;
   flex:1 0 auto;
 }
 
 .article {
   @extend .flex-item;
-  background: #41fc44;
+  background: lawngreen;
   flex: 4 0 auto;
 }
+
 
 .aside {
   @extend .flex-item;

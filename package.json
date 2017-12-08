@@ -1,7 +1,7 @@
 {
   "name": "maket",
   "version": "1.0.0",
-  "description": "",
+  "description": "3 column webpage",
   "main": "webpack.config.js",
   "dependencies": {
     "chunk": "^0.0.2",
@@ -15,10 +15,16 @@
     "webpack-livereload-plugin": "^1.0.0"
   },
   "devDependencies": {
-    "extract-text-webpack-plugin": "^3.0.2"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "webpack": "^3.10.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "start": "http-server"
   },
   "keywords": [],
   "author": "",
