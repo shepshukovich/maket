@@ -13,7 +13,7 @@ let createLinkTagInDOM = () => {
     ReactDOM.render(newLink, document.getElementById('head'));
 };
 
-let timeIn = () => {
+let timeInDiv = () => {
     const element = (
         <div>
             <h1>Текущее время в Минске: {new Date().toLocaleTimeString()}</h1>
@@ -25,7 +25,7 @@ let timeIn = () => {
 
 createLinkTagInDOM();
 
-setInterval(timeIn, 1000);
+setInterval(timeInDiv, 1000);
 
 
 
