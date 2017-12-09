@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     context:__dirname,
     entry: {
-        main: ["./src/index.js", "./src/input.scss"]
+        main: ["./src/index.jsx", "./src/input.scss"]
     },
 
     output: {
@@ -20,11 +20,12 @@ module.exports = {
             { test: /\.css$/, loader: "style-loader!css-loader" },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']) },
             {
-                test: /\.js$/,
+                test: /\.jsx$/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015']
-                }
+                    presets: ['es2015', 'react']
+                },
+                include: path.resolve(__dirname, "src")
             }
         ]
     },
