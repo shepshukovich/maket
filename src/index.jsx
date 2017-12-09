@@ -1,7 +1,6 @@
 "use strict";
 //let path = require("path");
 //let css = require("../dist/CSS/app.css");
-
 let createLinkTagInDOM = () => {
     let newLink = document.createElement('link');
     newLink.setAttribute('href', '/CSS/app.css');
