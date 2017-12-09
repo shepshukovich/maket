@@ -6,17 +6,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 let createLinkTagInDOM = () => {
-    let newLink = document.createElement('link');
-    newLink.setAttribute('href', '/CSS/app.css');
-    newLink.setAttribute('rel', 'stylesheet');
-    document.head.appendChild(newLink);
+    const newLink = (
+        <link href="/CSS/app.css" rel="stylesheet">
+        </link>
+    );
+    ReactDOM.render(newLink, document.getElementById('head'));
 };
 
 let timeIn = () => {
     const element = (
         <div>
-            <h1>Текущее время в Минске:</h1>
-            <h2>Сейчас {new Date().toLocaleTimeString()}.</h2>
+            <h1>Текущее время в Минске: {new Date().toLocaleTimeString()}</h1>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
