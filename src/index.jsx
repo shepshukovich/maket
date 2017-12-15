@@ -1,7 +1,5 @@
 "use strict";
 
-//let css = require("../dist/CSS/app.css");
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -21,7 +19,6 @@ let timeInDiv = () => {
     );
     ReactDOM.render(element, document.getElementById('root'));
 };
-
 
 createLinkTagInDOM();
 

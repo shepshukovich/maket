@@ -9,7 +9,6 @@
   display: -moz-flex;
   display: -webkit-flex;
   display: flex;
-
 }
 
 .wrapper > * {
@@ -29,6 +28,7 @@
     align-items: flex-start;
   }
 }
+
 .flex-item {
   background: tomato;
   padding: 5px;
@@ -42,6 +42,7 @@
   font-size: 2em;
   text-align: center;
 }
+
 .sidebar {
   @extend .flex-item;
   width: 400px;
@@ -49,13 +50,11 @@
   flex:1 0 auto;
 }
 
-
 .article {
   @extend .flex-item;
-  background: lawngreen;
+  background: greenyellow;
   flex: 4 0 auto;
 }
-
 
 .aside {
   @extend .flex-item;
@@ -63,3 +62,22 @@
   background: #2658ff;
   flex: 1 3 auto;
 }
+
+.first ul {
+  display: -webkit-flex;
+  display: flex;
+  background: #FFD7A7;
+  padding-left: 0;
+}
+
+.first a {
+  padding: 1em;
+  display: block;
+  color: #9B4222;
+  border-right: 1px solid #FFAB51;
+  background: #FFAB51;
+}
+
+.first a:hover {background: darkorange}
+
+

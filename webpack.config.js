@@ -2,6 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
     context:__dirname,
@@ -19,9 +20,7 @@ module.exports = {
         loaders: [
             { test: /\.css$/, loader: "style-loader!css-loader" },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']) },
-            {
-                test: /\.jsx$/,
-                loader: 'babel-loader',
+            { test: /\.jsx$/, loader: 'babel-loader',
                 query: {
                     presets: ['es2015', 'react']
                 },
@@ -32,7 +31,8 @@ module.exports = {
 
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new ExtractTextPlugin("./CSS/app.css")
+        new ExtractTextPlugin("./CSS/app.css"),
+        new LodashModuleReplacementPlugin
     ],
 
     devServer: {
@@ -45,3 +45,5 @@ module.exports = {
 
     devtool: "inline-source-map"
 };
+
+
