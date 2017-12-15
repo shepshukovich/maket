@@ -1,4 +1,4 @@
-.flex-container {
+.flex-container, .first ul {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -51,15 +51,17 @@
 .first ul {
   display: -webkit-flex;
   display: flex;
-  background: #FFD7A7;
-  padding-left: 0; }
+  background: transparent;
+  padding-left: 0;
+  list-style: none; }
 
 .first a {
   padding: 1em;
   display: block;
   color: #9B4222;
   border-right: 1px solid #FFAB51;
-  background: #FFAB51; }
+  background: #FFAB51;
+  text-decoration: none; }
 
 .first a:hover {
   background: darkorange; }

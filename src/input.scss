@@ -64,10 +64,12 @@
 }
 
 .first ul {
+  @extend .flex-container;
   display: -webkit-flex;
   display: flex;
-  background: #FFD7A7;
+  background: transparent;
   padding-left: 0;
+  list-style: none;
 }
 
 .first a {
@@ -76,6 +78,7 @@
   color: #9B4222;
   border-right: 1px solid #FFAB51;
   background: #FFAB51;
+  text-decoration: none;
 }
 
 .first a:hover {background: darkorange}
