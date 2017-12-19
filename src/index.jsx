@@ -1,7 +1,7 @@
 "use strict";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
+//import React from 'react';
+//import ReactDOM from 'react-dom';
 
 let createLinkTagInDOM = () => {
     const newLink = (
@@ -14,15 +14,15 @@ let createLinkTagInDOM = () => {
 let timeInDiv = () => {
     const element = (
         <div>
-            <h1>Текущее время в Минске: {new Date().toLocaleTimeString()}</h1>
+            <h1>Время в Минске: {new Date().toLocaleTimeString()}</h1>
         </div>
     );
     ReactDOM.render(element, document.getElementById('root'));
 };
 
 createLinkTagInDOM();
-
 setInterval(timeInDiv, 1000);
+
 
 
 
