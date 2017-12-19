@@ -1,7 +1,7 @@
 "use strict";
 
-//import React from 'react';
-//import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 let createLinkTagInDOM = () => {
     const newLink = (
@@ -24,7 +24,4 @@ createLinkTagInDOM();
 setInterval(timeInDiv, 1000);
 
 
-
-
 //<link href="output.css" rel="stylesheet">
-
