@@ -21,10 +21,12 @@ module.exports = {
             { test: /\.css$/, loader: "style-loader!css-loader" },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader']) },
             { test: /\.jsx$/, loader: 'babel-loader',
-                query: {
-                    presets: ['es2015', 'react']
+                query: { presets: ['es2015', 'react']
                 },
                 include: path.resolve(__dirname, "src")
+            },
+            { test: /\.(png|svg|jpg|gif)$/,
+                use: ['file-loader']
             }
         ]
     },
