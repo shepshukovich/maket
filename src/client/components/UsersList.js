@@ -4,11 +4,11 @@ import { fetchUsers } from '../actions';
 
 class UsersList extends Component {
     componentDidMount() {      // гарантирует наличие данных при использовании async или ajax(точно не знаю)
-         this.prop.fetchUsers();
+         this.props.fetchUsers();
     }
 
     renderUsers() {
-        return this.prop.name.map(user => {
+        return this.props.users.map(user => {
             return <li key={user.id}>{user.name}</li>
         })
     }
