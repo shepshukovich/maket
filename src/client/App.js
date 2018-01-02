@@ -3,7 +3,6 @@ import { renderRoutes } from 'react-router-config';
 import { fetchCurrentUser } from "./actions/index";
 import Header from './components/Header';
 
-
 const App = ({ route }) => {
 
     return <div>

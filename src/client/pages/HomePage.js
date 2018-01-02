@@ -3,10 +3,9 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div>
-            <div> Hey this is how you use server side rendering!!!! </div>
-            <button onClick={() => console.log("click!")}>Press me!
-            </button>
+        <div className="center-align" style={{marginTop: '200px'}}>
+            <h3>Welcome!</h3>
+            <p>Check out theese new features!</p>
         </div>
     );
 };
