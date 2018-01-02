@@ -8,3 +8,7 @@ export default (state = [], action) => {
             return state;
     }
 };
+
+const mapStateToProps = ({ auth }) => {
+    return { auth };    //same as auth: auth
+};
